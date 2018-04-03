@@ -1,0 +1,12 @@
+G:\PEMDESK\log\log\bin\Debug\log.exe.config
+G:\PEMDESK\log\log\bin\Debug\log.exe
+G:\PEMDESK\log\log\bin\Debug\log.pdb
+G:\PEMDESK\log\log\bin\Debug\log.xml
+G:\PEMDESK\log\log\obj\Debug\log.vbprojResolveAssemblyReference.cache
+G:\PEMDESK\log\log\obj\Debug\log.Form1.resources
+G:\PEMDESK\log\log\obj\Debug\log.Resources.resources
+G:\PEMDESK\log\log\obj\Debug\log.vbproj.GenerateResource.Cache
+G:\PEMDESK\log\log\obj\Debug\log.vbproj.CoreCompileInputs.cache
+G:\PEMDESK\log\log\obj\Debug\log.exe
+G:\PEMDESK\log\log\obj\Debug\log.xml
+G:\PEMDESK\log\log\obj\Debug\log.pdb

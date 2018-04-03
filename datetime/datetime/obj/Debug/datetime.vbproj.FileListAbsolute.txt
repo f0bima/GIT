@@ -1,0 +1,12 @@
+G:\PEMDESK\datetime\datetime\obj\Debug\datetime.vbprojResolveAssemblyReference.cache
+G:\PEMDESK\datetime\datetime\obj\Debug\datetime.Form1.resources
+G:\PEMDESK\datetime\datetime\obj\Debug\datetime.Resources.resources
+G:\PEMDESK\datetime\datetime\obj\Debug\datetime.vbproj.GenerateResource.Cache
+G:\PEMDESK\datetime\datetime\obj\Debug\datetime.vbproj.CoreCompileInputs.cache
+G:\PEMDESK\datetime\datetime\bin\Debug\datetime.exe.config
+G:\PEMDESK\datetime\datetime\bin\Debug\datetime.exe
+G:\PEMDESK\datetime\datetime\bin\Debug\datetime.pdb
+G:\PEMDESK\datetime\datetime\bin\Debug\datetime.xml
+G:\PEMDESK\datetime\datetime\obj\Debug\datetime.exe
+G:\PEMDESK\datetime\datetime\obj\Debug\datetime.xml
+G:\PEMDESK\datetime\datetime\obj\Debug\datetime.pdb
