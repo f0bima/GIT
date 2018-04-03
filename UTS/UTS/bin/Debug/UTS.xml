@@ -22,5 +22,15 @@ UTS
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:UTS.My.Resources.Resources.login_pemdesk">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:UTS.My.Resources.Resources.Splash">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 </members>
 </doc>

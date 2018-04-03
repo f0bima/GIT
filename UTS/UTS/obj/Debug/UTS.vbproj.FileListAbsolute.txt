@@ -3,10 +3,12 @@ G:\PEMDESK\UTS\UTS\bin\Debug\UTS.exe
 G:\PEMDESK\UTS\UTS\bin\Debug\UTS.pdb
 G:\PEMDESK\UTS\UTS\bin\Debug\UTS.xml
 G:\PEMDESK\UTS\UTS\obj\Debug\UTS.vbprojResolveAssemblyReference.cache
-G:\PEMDESK\UTS\UTS\obj\Debug\UTS.Form1.resources
 G:\PEMDESK\UTS\UTS\obj\Debug\UTS.Resources.resources
 G:\PEMDESK\UTS\UTS\obj\Debug\UTS.vbproj.GenerateResource.Cache
 G:\PEMDESK\UTS\UTS\obj\Debug\UTS.vbproj.CoreCompileInputs.cache
 G:\PEMDESK\UTS\UTS\obj\Debug\UTS.exe
 G:\PEMDESK\UTS\UTS\obj\Debug\UTS.xml
 G:\PEMDESK\UTS\UTS\obj\Debug\UTS.pdb
+G:\PEMDESK\UTS\UTS\obj\Debug\UTS.Home.resources
+G:\PEMDESK\UTS\UTS\obj\Debug\UTS.Login.resources
+G:\PEMDESK\UTS\UTS\obj\Debug\UTS.splash.resources
