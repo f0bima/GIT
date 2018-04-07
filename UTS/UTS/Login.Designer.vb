@@ -41,36 +41,36 @@ Partial Class Login
         '
         'UsernameLabel
         '
-        Me.UsernameLabel.BackColor = System.Drawing.SystemColors.Desktop
-        Me.UsernameLabel.ForeColor = System.Drawing.Color.White
-        Me.UsernameLabel.Location = New System.Drawing.Point(157, 200)
+        Me.UsernameLabel.BackColor = System.Drawing.Color.Transparent
+        Me.UsernameLabel.ForeColor = System.Drawing.Color.Black
+        Me.UsernameLabel.Location = New System.Drawing.Point(156, 249)
         Me.UsernameLabel.Name = "UsernameLabel"
         Me.UsernameLabel.Size = New System.Drawing.Size(220, 23)
         Me.UsernameLabel.TabIndex = 0
         Me.UsernameLabel.Text = "&User name"
-        Me.UsernameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.UsernameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'PasswordLabel
         '
-        Me.PasswordLabel.BackColor = System.Drawing.SystemColors.Desktop
-        Me.PasswordLabel.ForeColor = System.Drawing.Color.White
-        Me.PasswordLabel.Location = New System.Drawing.Point(157, 257)
+        Me.PasswordLabel.BackColor = System.Drawing.Color.Transparent
+        Me.PasswordLabel.ForeColor = System.Drawing.Color.Black
+        Me.PasswordLabel.Location = New System.Drawing.Point(155, 292)
         Me.PasswordLabel.Name = "PasswordLabel"
         Me.PasswordLabel.Size = New System.Drawing.Size(220, 23)
         Me.PasswordLabel.TabIndex = 2
         Me.PasswordLabel.Text = "&Password"
-        Me.PasswordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.PasswordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Username
         '
-        Me.Username.Location = New System.Drawing.Point(159, 220)
+        Me.Username.Location = New System.Drawing.Point(158, 269)
         Me.Username.Name = "Username"
         Me.Username.Size = New System.Drawing.Size(220, 20)
         Me.Username.TabIndex = 1
         '
         'Password
         '
-        Me.Password.Location = New System.Drawing.Point(159, 277)
+        Me.Password.Location = New System.Drawing.Point(157, 312)
         Me.Password.Name = "Password"
         Me.Password.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.Password.Size = New System.Drawing.Size(220, 20)
@@ -79,7 +79,7 @@ Partial Class Login
         'OK
         '
         Me.OK.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.OK.Location = New System.Drawing.Point(243, 322)
+        Me.OK.Location = New System.Drawing.Point(303, 338)
         Me.OK.Name = "OK"
         Me.OK.Size = New System.Drawing.Size(74, 23)
         Me.OK.TabIndex = 4
@@ -90,7 +90,7 @@ Partial Class Login
         '
         Me.Cancel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.Cancel.Location = New System.Drawing.Point(159, 322)
+        Me.Cancel.Location = New System.Drawing.Point(229, 338)
         Me.Cancel.Name = "Cancel"
         Me.Cancel.Size = New System.Drawing.Size(68, 23)
         Me.Cancel.TabIndex = 5
@@ -102,7 +102,7 @@ Partial Class Login
         Me.AcceptButton = Me.OK
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.UTS.My.Resources.Resources.login_pemdesk
+        Me.BackgroundImage = Global.UTS.My.Resources.Resources.backlogin
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.CancelButton = Me.Cancel
         Me.ClientSize = New System.Drawing.Size(518, 527)

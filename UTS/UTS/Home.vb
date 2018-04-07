@@ -3,6 +3,18 @@
     Private Sub Home_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         user = Login.userlogin
         Timer1.Enabled = True
+        Select Case My.Settings.background
+            Case 1
+                Panel1.BackgroundImage = My.Resources.bg1
+            Case 2
+                Panel1.BackgroundImage = My.Resources.bg2
+            Case 3
+                Panel1.BackgroundImage = My.Resources.bg3
+            Case 4
+                Panel1.BackgroundImage = My.Resources.bg4
+            Case Else
+                Panel1.BackgroundImage = My.Resources.bg1
+        End Select
 
     End Sub
     Private Sub convert_Click(sender As Object, e As EventArgs) Handles convert.Click
@@ -31,5 +43,26 @@
         objWriter.Close()
         Login.Show()
         Me.Close()
+    End Sub
+
+    Private Sub setting_Click(sender As Object, e As EventArgs) Handles setting.Click
+        Panelsetting.BringToFront()
+    End Sub
+
+    Private Sub RadioButton1_CheckedChanged_1(sender As Object, e As EventArgs) Handles RadioButton1.CheckedChanged
+        Panel1.BackgroundImage = My.Resources.bg1
+        My.Settings.background = 1
+    End Sub
+    Private Sub RadioButton2_CheckedChanged_1(sender As Object, e As EventArgs) Handles RadioButton2.CheckedChanged
+        Panel1.BackgroundImage = My.Resources.bg2
+        My.Settings.background = 2
+    End Sub
+    Private Sub RadioButton3_CheckedChanged_1(sender As Object, e As EventArgs) Handles RadioButton3.CheckedChanged
+        Panel1.BackgroundImage = My.Resources.bg3
+        My.Settings.background = 3
+    End Sub
+    Private Sub RadioButton4_CheckedChanged_1(sender As Object, e As EventArgs) Handles RadioButton4.CheckedChanged
+        Panel1.BackgroundImage = My.Resources.bg4
+        My.Settings.background = 4
     End Sub
 End Class
