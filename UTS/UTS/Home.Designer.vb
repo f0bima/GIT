@@ -26,16 +26,21 @@ Partial Class Home
         Me.input = New System.Windows.Forms.TextBox()
         Me.convert = New System.Windows.Forms.Button()
         Me.hasil = New System.Windows.Forms.Label()
-        Me.inputsh = New System.Windows.Forms.TextBox()
-        Me.outputsh = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panelsuhu = New System.Windows.Forms.Panel()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.outputsh = New System.Windows.Forms.ComboBox()
+        Me.inputsh = New System.Windows.Forms.ComboBox()
+        Me.kata2 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.logheading = New System.Windows.Forms.Label()
         Me.RTBlog = New System.Windows.Forms.RichTextBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.username = New System.Windows.Forms.Label()
+        Me.keluar = New System.Windows.Forms.Label()
         Me.setting = New System.Windows.Forms.Label()
         Me.Logout = New System.Windows.Forms.Label()
         Me.tanggal = New System.Windows.Forms.Label()
@@ -48,14 +53,17 @@ Partial Class Home
         Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.usericon = New System.Windows.Forms.PictureBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.Panelsuhu.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panelsetting.SuspendLayout()
+        CType(Me.usericon, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -64,74 +72,119 @@ Partial Class Home
         '
         'input
         '
-        Me.input.Location = New System.Drawing.Point(79, 77)
+        Me.input.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.input.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.input.Location = New System.Drawing.Point(110, 87)
         Me.input.Name = "input"
-        Me.input.Size = New System.Drawing.Size(100, 20)
+        Me.input.Size = New System.Drawing.Size(275, 42)
         Me.input.TabIndex = 0
+        Me.input.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'convert
         '
-        Me.convert.Location = New System.Drawing.Point(244, 75)
+        Me.convert.Location = New System.Drawing.Point(197, 212)
         Me.convert.Name = "convert"
-        Me.convert.Size = New System.Drawing.Size(75, 23)
-        Me.convert.TabIndex = 1
-        Me.convert.Text = "Button1"
+        Me.convert.Size = New System.Drawing.Size(102, 34)
+        Me.convert.TabIndex = 3
+        Me.convert.Text = "Covert"
         Me.convert.UseVisualStyleBackColor = True
         '
         'hasil
         '
-        Me.hasil.AutoSize = True
-        Me.hasil.Location = New System.Drawing.Point(201, 283)
+        Me.hasil.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.hasil.Location = New System.Drawing.Point(0, 288)
         Me.hasil.Name = "hasil"
-        Me.hasil.Size = New System.Drawing.Size(39, 13)
+        Me.hasil.Size = New System.Drawing.Size(511, 60)
         Me.hasil.TabIndex = 2
-        Me.hasil.Text = "Label1"
-        '
-        'inputsh
-        '
-        Me.inputsh.Location = New System.Drawing.Point(79, 130)
-        Me.inputsh.Name = "inputsh"
-        Me.inputsh.Size = New System.Drawing.Size(100, 20)
-        Me.inputsh.TabIndex = 3
-        '
-        'outputsh
-        '
-        Me.outputsh.Location = New System.Drawing.Point(79, 186)
-        Me.outputsh.Name = "outputsh"
-        Me.outputsh.Size = New System.Drawing.Size(100, 20)
-        Me.outputsh.TabIndex = 4
+        Me.hasil.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(261, 137)
+        Me.Label1.Location = New System.Drawing.Point(117, 156)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(40, 13)
+        Me.Label1.Size = New System.Drawing.Size(108, 13)
         Me.Label1.TabIndex = 5
-        Me.Label1.Text = "INPUT"
+        Me.Label1.Text = "JENIS SUHU AWAL "
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(249, 186)
+        Me.Label2.Location = New System.Drawing.Point(286, 156)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(52, 13)
+        Me.Label2.Size = New System.Drawing.Size(79, 13)
         Me.Label2.TabIndex = 6
-        Me.Label2.Text = "OUTPUT"
+        Me.Label2.Text = "CONVERT KE "
         '
         'Panelsuhu
         '
+        Me.Panelsuhu.Controls.Add(Me.Label6)
+        Me.Panelsuhu.Controls.Add(Me.Label5)
+        Me.Panelsuhu.Controls.Add(Me.outputsh)
+        Me.Panelsuhu.Controls.Add(Me.inputsh)
+        Me.Panelsuhu.Controls.Add(Me.kata2)
         Me.Panelsuhu.Controls.Add(Me.convert)
         Me.Panelsuhu.Controls.Add(Me.hasil)
         Me.Panelsuhu.Controls.Add(Me.Label2)
         Me.Panelsuhu.Controls.Add(Me.input)
         Me.Panelsuhu.Controls.Add(Me.Label1)
-        Me.Panelsuhu.Controls.Add(Me.inputsh)
-        Me.Panelsuhu.Controls.Add(Me.outputsh)
         Me.Panelsuhu.Location = New System.Drawing.Point(211, 0)
         Me.Panelsuhu.Name = "Panelsuhu"
         Me.Panelsuhu.Size = New System.Drawing.Size(510, 373)
         Me.Panelsuhu.TabIndex = 0
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(22, 9)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(476, 55)
+        Me.Label6.TabIndex = 11
+        Me.Label6.Text = "SUHU CONVERTER"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(208, 132)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(72, 13)
+        Me.Label5.TabIndex = 10
+        Me.Label5.Text = "SUHU AWAL"
+        '
+        'outputsh
+        '
+        Me.outputsh.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append
+        Me.outputsh.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.outputsh.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.outputsh.FormattingEnabled = True
+        Me.outputsh.Items.AddRange(New Object() {"Celcius", "Farenheit", "Reamur", "Kelvin"})
+        Me.outputsh.Location = New System.Drawing.Point(264, 176)
+        Me.outputsh.Name = "outputsh"
+        Me.outputsh.Size = New System.Drawing.Size(121, 21)
+        Me.outputsh.TabIndex = 2
+        Me.outputsh.Text = "Celcius"
+        '
+        'inputsh
+        '
+        Me.inputsh.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append
+        Me.inputsh.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.inputsh.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.inputsh.FormattingEnabled = True
+        Me.inputsh.Items.AddRange(New Object() {"Celcius", "Farenheit", "Reamur", "Kelvin"})
+        Me.inputsh.Location = New System.Drawing.Point(110, 176)
+        Me.inputsh.Name = "inputsh"
+        Me.inputsh.Size = New System.Drawing.Size(121, 21)
+        Me.inputsh.TabIndex = 1
+        Me.inputsh.Text = "Celcius"
+        '
+        'kata2
+        '
+        Me.kata2.Location = New System.Drawing.Point(0, 249)
+        Me.kata2.Name = "kata2"
+        Me.kata2.Size = New System.Drawing.Size(510, 44)
+        Me.kata2.TabIndex = 7
+        Me.kata2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Panel2
         '
@@ -145,17 +198,19 @@ Partial Class Home
         'logheading
         '
         Me.logheading.AutoSize = True
-        Me.logheading.Location = New System.Drawing.Point(204, 9)
+        Me.logheading.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.logheading.Location = New System.Drawing.Point(192, 9)
         Me.logheading.Name = "logheading"
-        Me.logheading.Size = New System.Drawing.Size(72, 13)
+        Me.logheading.Size = New System.Drawing.Size(140, 25)
         Me.logheading.TabIndex = 1
         Me.logheading.Text = "LOG HISTOY"
         '
         'RTBlog
         '
-        Me.RTBlog.Location = New System.Drawing.Point(16, 28)
+        Me.RTBlog.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.RTBlog.Location = New System.Drawing.Point(16, 41)
         Me.RTBlog.Name = "RTBlog"
-        Me.RTBlog.Size = New System.Drawing.Size(450, 304)
+        Me.RTBlog.Size = New System.Drawing.Size(475, 276)
         Me.RTBlog.TabIndex = 0
         Me.RTBlog.Text = ""
         '
@@ -165,6 +220,10 @@ Partial Class Home
         'Panel1
         '
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel1.Controls.Add(Me.Button1)
+        Me.Panel1.Controls.Add(Me.username)
+        Me.Panel1.Controls.Add(Me.usericon)
+        Me.Panel1.Controls.Add(Me.keluar)
         Me.Panel1.Controls.Add(Me.setting)
         Me.Panel1.Controls.Add(Me.Logout)
         Me.Panel1.Controls.Add(Me.tanggal)
@@ -176,62 +235,87 @@ Partial Class Home
         Me.Panel1.Size = New System.Drawing.Size(212, 373)
         Me.Panel1.TabIndex = 1
         '
+        'username
+        '
+        Me.username.BackColor = System.Drawing.Color.Yellow
+        Me.username.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.username.Location = New System.Drawing.Point(0, 105)
+        Me.username.Name = "username"
+        Me.username.Size = New System.Drawing.Size(212, 23)
+        Me.username.TabIndex = 8
+        Me.username.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'keluar
+        '
+        Me.keluar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.keluar.Location = New System.Drawing.Point(3, 278)
+        Me.keluar.Name = "keluar"
+        Me.keluar.Size = New System.Drawing.Size(206, 31)
+        Me.keluar.TabIndex = 6
+        Me.keluar.Text = "EXIT"
+        Me.keluar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'setting
         '
-        Me.setting.AutoSize = True
         Me.setting.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.setting.Location = New System.Drawing.Point(69, 211)
+        Me.setting.Location = New System.Drawing.Point(3, 216)
         Me.setting.Name = "setting"
-        Me.setting.Size = New System.Drawing.Size(40, 13)
+        Me.setting.Size = New System.Drawing.Size(206, 31)
         Me.setting.TabIndex = 5
-        Me.setting.Text = "Setting"
+        Me.setting.Text = "SETTING"
+        Me.setting.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Logout
         '
-        Me.Logout.AutoSize = True
+        Me.Logout.BackColor = System.Drawing.Color.White
         Me.Logout.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Logout.Location = New System.Drawing.Point(68, 242)
+        Me.Logout.Location = New System.Drawing.Point(3, 247)
         Me.Logout.Name = "Logout"
-        Me.Logout.Size = New System.Drawing.Size(52, 13)
+        Me.Logout.Size = New System.Drawing.Size(206, 31)
         Me.Logout.TabIndex = 4
         Me.Logout.Text = "LOGOUT"
+        Me.Logout.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'tanggal
         '
-        Me.tanggal.AutoSize = True
-        Me.tanggal.Location = New System.Drawing.Point(68, 319)
+        Me.tanggal.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tanggal.Location = New System.Drawing.Point(0, 320)
         Me.tanggal.Name = "tanggal"
-        Me.tanggal.Size = New System.Drawing.Size(39, 13)
+        Me.tanggal.Size = New System.Drawing.Size(212, 28)
         Me.tanggal.TabIndex = 3
-        Me.tanggal.Text = "Label3"
+        Me.tanggal.Text = "TANGGAL"
+        Me.tanggal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'waktu
         '
-        Me.waktu.AutoSize = True
-        Me.waktu.Location = New System.Drawing.Point(68, 294)
+        Me.waktu.BackColor = System.Drawing.SystemColors.Control
+        Me.waktu.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.waktu.Location = New System.Drawing.Point(0, 348)
         Me.waktu.Name = "waktu"
-        Me.waktu.Size = New System.Drawing.Size(39, 13)
+        Me.waktu.Size = New System.Drawing.Size(212, 25)
         Me.waktu.TabIndex = 2
-        Me.waktu.Text = "Label3"
+        Me.waktu.Text = "WAKTU"
+        Me.waktu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Log
         '
         Me.Log.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Log.Location = New System.Drawing.Point(71, 100)
+        Me.Log.Location = New System.Drawing.Point(3, 124)
         Me.Log.Name = "Log"
-        Me.Log.Size = New System.Drawing.Size(39, 15)
+        Me.Log.Size = New System.Drawing.Size(206, 29)
         Me.Log.TabIndex = 1
         Me.Log.Text = "LOG"
+        Me.Log.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'suhu
         '
-        Me.suhu.AutoSize = True
         Me.suhu.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.suhu.Location = New System.Drawing.Point(69, 52)
+        Me.suhu.Location = New System.Drawing.Point(3, 182)
         Me.suhu.Name = "suhu"
-        Me.suhu.Size = New System.Drawing.Size(38, 13)
+        Me.suhu.Size = New System.Drawing.Size(206, 34)
         Me.suhu.TabIndex = 0
         Me.suhu.Text = "SUHU"
+        Me.suhu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Panelsetting
         '
@@ -296,18 +380,30 @@ Partial Class Home
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(244, 9)
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(213, 9)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(45, 13)
+        Me.Label3.Size = New System.Drawing.Size(86, 25)
         Me.Label3.TabIndex = 4
         Me.Label3.Text = "THEME"
+        '
+        'usericon
+        '
+        Me.usericon.BackColor = System.Drawing.Color.Transparent
+        Me.usericon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.usericon.Location = New System.Drawing.Point(69, 6)
+        Me.usericon.Name = "usericon"
+        Me.usericon.Size = New System.Drawing.Size(72, 67)
+        Me.usericon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.usericon.TabIndex = 7
+        Me.usericon.TabStop = False
         '
         'PictureBox4
         '
         Me.PictureBox4.Image = Global.UTS.My.Resources.Resources.bg4
-        Me.PictureBox4.Location = New System.Drawing.Point(389, 31)
+        Me.PictureBox4.Location = New System.Drawing.Point(389, 37)
         Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(109, 286)
+        Me.PictureBox4.Size = New System.Drawing.Size(109, 280)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox4.TabIndex = 3
         Me.PictureBox4.TabStop = False
@@ -315,9 +411,9 @@ Partial Class Home
         'PictureBox3
         '
         Me.PictureBox3.Image = Global.UTS.My.Resources.Resources.bg3
-        Me.PictureBox3.Location = New System.Drawing.Point(264, 31)
+        Me.PictureBox3.Location = New System.Drawing.Point(264, 37)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(109, 286)
+        Me.PictureBox3.Size = New System.Drawing.Size(109, 280)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox3.TabIndex = 2
         Me.PictureBox3.TabStop = False
@@ -325,9 +421,9 @@ Partial Class Home
         'PictureBox2
         '
         Me.PictureBox2.Image = Global.UTS.My.Resources.Resources.bg2
-        Me.PictureBox2.Location = New System.Drawing.Point(137, 31)
+        Me.PictureBox2.Location = New System.Drawing.Point(137, 37)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(109, 286)
+        Me.PictureBox2.Size = New System.Drawing.Size(109, 280)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 1
         Me.PictureBox2.TabStop = False
@@ -335,22 +431,35 @@ Partial Class Home
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.UTS.My.Resources.Resources.bg1
-        Me.PictureBox1.Location = New System.Drawing.Point(13, 31)
+        Me.PictureBox1.Location = New System.Drawing.Point(13, 37)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(109, 286)
+        Me.PictureBox1.Size = New System.Drawing.Size(109, 280)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.White
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Location = New System.Drawing.Point(78, 79)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(56, 23)
+        Me.Button1.TabIndex = 9
+        Me.Button1.Text = "ABOUT"
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Home
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(721, 475)
-        Me.Controls.Add(Me.Panelsetting)
+        Me.ClientSize = New System.Drawing.Size(721, 372)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Panelsuhu)
         Me.Controls.Add(Me.Panel2)
+        Me.Controls.Add(Me.Panelsetting)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.MaximumSize = New System.Drawing.Size(737, 414)
         Me.Name = "Home"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
@@ -359,9 +468,9 @@ Partial Class Home
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
         Me.Panelsetting.ResumeLayout(False)
         Me.Panelsetting.PerformLayout()
+        CType(Me.usericon, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
@@ -373,8 +482,6 @@ Partial Class Home
     Friend WithEvents input As TextBox
     Friend WithEvents convert As Button
     Friend WithEvents hasil As Label
-    Friend WithEvents inputsh As TextBox
-    Friend WithEvents outputsh As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Panelsuhu As Panel
@@ -399,4 +506,13 @@ Partial Class Home
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents Label5 As Label
+    Friend WithEvents outputsh As ComboBox
+    Friend WithEvents inputsh As ComboBox
+    Friend WithEvents kata2 As Label
+    Friend WithEvents Label6 As Label
+    Friend WithEvents keluar As Label
+    Friend WithEvents usericon As PictureBox
+    Friend WithEvents username As Label
+    Friend WithEvents Button1 As Button
 End Class

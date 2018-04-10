@@ -11,7 +11,6 @@ Public Class Login
     Public userlogin As String
     Public FILE_NAME As String = "...\log.txt"
     Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        BackColor = Color.Coral
         TransparencyKey = BackColor
         Timer1.Enabled = True
     End Sub
@@ -24,16 +23,25 @@ Public Class Login
             MessageBox.Show("SELAMAT DATANG A")
             ujenis = "A"
             userlogin = "A"
+            My.Settings.user = 1
         ElseIf (user = "B" And pass = "B") Then
             MessageBox.Show("SELAMAT DATANG B")
             ujenis = "B"
             userlogin = "B"
+            My.Settings.user = 2
         ElseIf (user = "C" And pass = "C") Then
             MessageBox.Show("SELAMAT DATANG C")
             ujenis = "C"
             userlogin = "C"
+            My.Settings.user = 3
+        ElseIf Username.Text = String.Empty Then
+            MessageBox.Show("SILAHKAN ISI USERNAME")
+            ujenis = "f"
+        ElseIf Password.Text = String.Empty Then
+            MessageBox.Show("SILAHKAN ISI PASSWORD")
+            ujenis = "f"
         Else
-            MessageBox.Show("GAGAL")
+            MessageBox.Show("USER ATAU PASSWORD SALAH")
             ujenis = "f"
         End If
         If (ujenis <> "f") Then

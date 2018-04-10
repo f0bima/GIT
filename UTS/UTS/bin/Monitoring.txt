@@ -1,0 +1,132 @@
+﻿USER :  08-04-2018 02:11:28
+      SUHU  : 200
+      From  : c To f
+      Hasil : 392
+USER : C 08-04-2018 02:20:46
+      SUHU  : 21
+      From  : c To r
+      Hasil : 16.8
+USER : A 08-04-2018 02:41:18
+      SUHU  : 22
+      From  : Celcius To Farenheit
+      Hasil : 71.6
+USER : A 08-04-2018 02:41:21
+      SUHU  : 22
+      From  : Celcius To Reamur
+      Hasil : 17.6
+USER : A 08-04-2018 02:41:24
+      SUHU  : 22
+      From  : Celcius To Kelvin
+      Hasil : 295
+USER : B 08-04-2018 04:37:19
+      SUHU  : 19
+      From  : Farenheit To Reamur
+      Hasil : -5.77777777777778
+USER : B 08-04-2018 04:37:21
+      SUHU  : 19
+      From  : Farenheit To Kelvin
+      Hasil : 265.777777777778
+USER : B 08-04-2018 04:37:25
+      SUHU  : 19
+      From  : Farenheit To Celcius
+      Hasil : -7.22222222222222
+USER : A 08-04-2018 08.22.17
+      SUHU  : 20
+      From  : Celcius To Farenheit
+      Hasil : 68
+USER : A 09-04-2018 10.24.08
+      SUHU  : 4
+      From  : Farenheit To Kelvin
+      Hasil : 257,444444444444
+USER : A 09-04-2018 10.25.23
+      SUHU  : 2
+      From  : Celcius To Reamur
+      Hasil : 1,6 Reamur
+USER : A 09-04-2018 10.27.10
+      SUHU  : 5
+      From  : Reamur To Reamur
+      Hasil : 5 Reamur
+USER : A 09-04-2018 10.29.02
+      SUHU  : 5
+      From  : Farenheit To Reamur
+      Hasil : -12 Reamur
+USER : A 09-04-2018 10.32.52
+      SUHU  : 6
+      From  : Celcius To Farenheit
+      Hasil : 42,8 Farenheit
+USER : A 09-04-2018 10.36.34
+      SUHU  : 1
+      From  : e To w
+      Hasil : NaN w
+USER : A 09-04-2018 10.56.12
+      SUHU  : 4
+      From  : Farenheit To Celcius
+      Hasil : -15,5555555555556 Celcius
+USER : A 09-04-2018 10.58.25
+      SUHU  : 3
+      From  : Celcius To a
+      Hasil : 0 a
+USER : A 09-04-2018 11.18.31
+      SUHU  : 
+      From  : Celcius To Celcius
+      Hasil : MASUKAN ANGKA
+USER : A 09-04-2018 11.19.29
+      SUHU  : 1
+      From  : Farenheit To Reamur
+      Hasil : -13,7777777777778 Reamur
+USER : A 09-04-2018 11.35.12
+      SUHU  : 5
+      From  : Reamur To Reamur
+      Hasil : 5 Reamur
+USER : A 09-04-2018 11.35.23
+      SUHU  : 
+      From  : Kelvin To Celcius
+      Hasil : MASUKAN ANGKA
+USER : A 09-04-2018 11.35.26
+      SUHU  : 60
+      From  : Kelvin To Celcius
+      Hasil : -213 Celcius
+USER : B 09-04-2018 11.35.53
+      SUHU  : 3
+      From  : Celcius To Kelvin
+      Hasil : 276 Kelvin
+USER : B 10-04-2018 05.02.07
+      SUHU  : 30
+      From  : Farenheit To Celcius
+      Hasil : -1,11111111111111 Celcius
+USER : B 10-04-2018 05.02.19
+      SUHU  : 
+      From  : Farenheit To Celcius
+      Hasil : MASUKAN ANGKA
+USER : B 10-04-2018 05.02.36
+      SUHU  : 2
+      From  : Celcius To Celcius
+      Hasil : 2 Celcius
+USER : B 10-04-2018 05.02.39
+      SUHU  : 2
+      From  : Celcius To Farenheit
+      Hasil : 35,6 Farenheit
+USER : A 10-04-2018 05.05.46
+      SUHU  : 
+      From  : Celcius To Celcius
+      Hasil : MASUKAN ANGKA
+USER : A 10-04-2018 05.05.52
+      SUHU  : 
+      From  : Celcius To Celcius
+      Hasil : MASUKAN ANGKA
+USER : A 10-04-2018 09.12.11
+      SUHU  : 4
+      From  : Celcius To Celcius
+      Hasil : 4 Celcius
+USER : A 10-04-2018 09.12.14
+      SUHU  : 4
+      From  : Celcius To Reamur
+      Hasil : 3,2 Reamur
+USER : A 10-04-2018 09.12.21
+      SUHU  : 4
+      From  : Farenheit To Kelvin
+      Hasil : 257,444444444444 Kelvin
+USER : A 10-04-2018 09.26.12
+      SUHU  : 100
+      From  : Celcius To Reamur
+      Hasil : 80 Reamur

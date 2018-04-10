@@ -5,26 +5,26 @@
         Dim b As Integer
         Dim tambah As Integer = 0
         Select Case inp
-            Case "c"
+            Case "Celcius"
                 b = 5
-            Case "r"
+            Case "Reamur"
                 b = 4
-            Case "f"
+            Case "Farenheit"
                 b = 9
                 x = x - 32
-            Case "k"
+            Case "Kelvin"
                 b = 5
                 tambah = -273
         End Select
         Select Case out
-            Case "c"
+            Case "Celcius"
                 a = 5
-            Case "r"
+            Case "Reamur"
                 a = 4
-            Case "f"
+            Case "Farenheit"
                 a = 9
                 tambah = 32
-            Case "k"
+            Case "Kelvin"
                 a = 5
                 tambah = 273
         End Select
